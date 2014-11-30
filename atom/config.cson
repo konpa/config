@@ -8,8 +8,6 @@
     'softWrap': true
     'showInvisibles': true
     'showIndentGuide': true
-    'invisibles': {}
-    'tabLength': 4
   'exception-reporting':
     'userId': '03c11da0-e83b-388d-16bc-5417ce854551'
   'release-notes':
@@ -31,3 +29,6 @@
   'atom-terminal':
     'app': 'iTerm.app'
   'excludeVcsIgnoredPaths': false
+  'atom-beautify':
+    '_analyticsUserId': 'b5fdd22d-2e28-409a-9290-de16a5dad33a'
+  'linter': {}
