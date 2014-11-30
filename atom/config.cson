@@ -1,0 +1,33 @@
+'global':
+  'core':
+    'themes': [
+      'atom-dark-ui'
+      'monokai'
+    ]
+  'editor':
+    'softWrap': true
+    'showInvisibles': true
+    'showIndentGuide': true
+    'invisibles': {}
+    'tabLength': 4
+  'exception-reporting':
+    'userId': '03c11da0-e83b-388d-16bc-5417ce854551'
+  'release-notes':
+    'viewedVersion': '0.94.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '243ca58cf05dd166d7a6e4ac66b0179bbd4f6f6f'
+  'linter-php':
+    'phpExecutablePath': '/usr/bin/'
+  'linter-scss-lint':
+    'scssLintExecutablePath': '/usr/bin/'
+  'linter-jshint':
+    'jshintExecutablePath': '/usr/local/bin/'
+  'linter-csslint':
+    'csslintExecutablePath': '/usr/local/bin/'
+  'linter-phpcs':
+    'phpcsExecutablePath': '/usr/local/bin/'
+  'atom-terminal':
+    'app': 'iTerm.app'
+  'excludeVcsIgnoredPaths': false
