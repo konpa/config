@@ -78,4 +78,40 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+##
+# GIT ALIAS
+##
+
+# Update all submodules
 alias gspa="git submodule foreach git pull origin master"
+
+# Check remote branches
+alias gcrb="git branch -v -a"
+# Checkout remote branch
+alias gcorb="git checkout -b" # gcorb branch_name origin/branch_name
+
+## Git-flow
+# init
+alias gfi="git flow init"
+# Start new feature
+alias gffs="git flow feature start" # gffs feature_name
+# Finish up a feature
+alias gfff="git flow feature finish" # gfff feature_name
+# Publish a feature
+alias gffp="git flow feature publish" # gffp feature_name
+# Getting a published feature
+alias gffl="git flow feature pull origin" # gffl feature_name
+# Start a release
+alias gfrs="git flow release start" # gfrs vX.X.X
+# Publish a release
+alias gfrp="git flow release publish" # gfrp vX.X.X
+# Finish up a release
+alias gfrf="git flow release finish" # gfrf vX.X.X
+# Push the release tags
+alias gpt="git push --tags"
+# Start a hotfix
+alias gfhs="git flow hotfix start" # gfhs hotfix_name
+# Finish a hotfix
+alias gfhf="git flow hotfix finish" # gfhf hotfix_name
+
