@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # GIT ALIAS
 ##
 
+# Init and get submodules
+alias gsui="git submodule update --init --recursive"
 # Update all submodules
 alias gspa="git submodule foreach git pull origin master"
 
