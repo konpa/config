@@ -15,6 +15,26 @@
 #
 
 #
+# Comment snippets
+#
+
+# /**/ based
+
+'.source.php, .source.scss, .source.js':
+    'Section comment':
+        'prefix': 'coms'
+        'body': '''
+            /*
+            |---------------------------------------------------------
+            | ${1:Section title}
+            |---------------------------------------------------------
+            */
+
+            /*-------------- End of ${2:Section title} --------------*/
+            }
+        '''
+
+#
 # Laravel snippets
 #
 '.source.php':
