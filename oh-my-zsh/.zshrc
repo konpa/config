@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # GIT ALIAS
 ##
 
+alias gpom="git push origin master"
+alias glom="git pull origin master"
+
 # Init and get submodules
 alias gsui="git submodule update --init --recursive"
 # Update all submodules
