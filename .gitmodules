@@ -1,0 +1,27 @@
+[submodule "vim/autoload/vim-pathogen.git"]
+	path = vim/autoload/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/nerdtree.git"]
+	path = vim/bundle/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/syntastic.git"]
+	path = vim/bundle/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/tabular.git"]
+	path = vim/bundle/tabular.git
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/vim-airline.git"]
+	path = vim/bundle/vim-airline.git
+	url = https://github.com/bling/vim-airline.git
+[submodule "vim/bundle/vim-colors-solarized.git"]
+	path = vim/bundle/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/vim-easymotion.git"]
+	path = vim/bundle/vim-easymotion.git
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/bundle/vim-fugitive.git"]
+	path = vim/bundle/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-surround.git"]
+	path = vim/bundle/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git

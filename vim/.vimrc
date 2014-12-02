@@ -1,33 +1,35 @@
+" Load pathogen
+execute pathogen#infect()
+
 " Add color scheme
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-" tabs becomes spaces
-set expandtab
 
-" show line numbers
-set number
+set expandtab           " tabs becomes spaces
+set tabstop=2           " tabs length
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+set cursorline          " highlight current line
+filetype indent on      " load filetype-specific indent file
+set wildmenu            " visual autocomplete for command menu
+set showmatch           " highlight matching {{()}}
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
 
-" show command in bottom bar
-set showcmd
 
-" highlight current line
-set cursorline
+" Disable backup files
+set nobackup
+set nowritebackup
 
-" load filetype-specific indent file
-filetype indent on
 
-" visual autocomplete for command menu
-set wildmenu
+"" Mapping
 
-" highlight matching {{()}}
-set showmatch
+" Easymotion
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
 
-" search as characters are entered
-set incsearch
-
-" highlight matches
-set hlsearch
-
+" Airline
+set laststatus=2
