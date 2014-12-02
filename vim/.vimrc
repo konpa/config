@@ -1,3 +1,6 @@
+" Load pathogen
+execute pathogen#infect()
+
 " Add color scheme
 syntax enable
 set background=dark
@@ -30,4 +33,10 @@ set incsearch
 
 " highlight matches
 set hlsearch
+
+"" MAPPING
+
+" Easymotion
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
 
