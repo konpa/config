@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # GIT ALIAS
 ##
 
+alias gfc="git fetch" # update list of branch from the remote
+alias gbr="git branch -r" # display all remote branches
+
 alias gpom="git push origin master"
 alias glom="git pull origin master"
 
