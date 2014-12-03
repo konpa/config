@@ -3,9 +3,7 @@ execute pathogen#infect()
 
 " Add color scheme
 syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme molokai
 
 
 set expandtab           " tabs becomes spaces
@@ -34,3 +32,6 @@ nmap t <Plug>(easymotion-t2)
 " Airline
 set laststatus=2
 let g:airline#extension#tabline#enabled = 1
+
+" Snipmate
+let g:snippets_dir = "~/.my-config/vim/snippets, ~/.my-config/vim/bundle/snipmate.vim.git/snippets"
