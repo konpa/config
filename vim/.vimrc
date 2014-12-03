@@ -33,3 +33,4 @@ nmap t <Plug>(easymotion-t2)
 
 " Airline
 set laststatus=2
+let g:airline#extension#tabline#enabled = 1
