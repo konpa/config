@@ -1,34 +1,35 @@
-'global':
-  'core':
-    'themes': [
-      'atom-dark-ui'
-      'monokai'
+"*":
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monokai"
     ]
-  'editor':
-    'softWrap': true
-    'showInvisibles': true
-    'showIndentGuide': true
-  'exception-reporting':
-    'userId': '03c11da0-e83b-388d-16bc-5417ce854551'
-  'release-notes':
-    'viewedVersion': '0.94.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '243ca58cf05dd166d7a6e4ac66b0179bbd4f6f6f'
-  'linter-php':
-    'phpExecutablePath': '/usr/bin/'
-  'linter-scss-lint':
-    'scssLintExecutablePath': '/usr/bin/'
-  'linter-jshint':
-    'jshintExecutablePath': '/usr/local/bin/'
-  'linter-csslint':
-    'csslintExecutablePath': '/usr/local/bin/'
-  'linter-phpcs':
-    'phpcsExecutablePath': '/usr/local/bin/'
-  'atom-terminal':
-    'app': 'iTerm.app'
-  'excludeVcsIgnoredPaths': false
-  'atom-beautify':
-    '_analyticsUserId': 'b5fdd22d-2e28-409a-9290-de16a5dad33a'
-  'linter': {}
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    softWrap: true
+    invisibles: {}
+    fontSize: 21
+  welcome:
+    showOnStartup: false
+  "linter-php":
+    phpExecutablePath: "/usr/bin/"
+  "linter-scss-lint":
+    scssLintExecutablePath: "/usr/bin/"
+  "linter-jshint":
+    jshintExecutablePath: "/usr/local/bin/"
+  "linter-csslint":
+    csslintExecutablePath: "/usr/local/bin/"
+  "linter-phpcs":
+    phpcsExecutablePath: "/usr/local/bin/"
+  "atom-terminal":
+    app: "iTerm.app"
+  excludeVcsIgnoredPaths: false
+  "atom-beautify":
+    _analyticsUserId: "b5fdd22d-2e28-409a-9290-de16a5dad33a"
+    php_beautifier_path: "/usr/local/bin/php_beautifier"
+  linter:
+    ignoredLinterErrors: [
+      "scss-lint"
+    ]
+  emmet: {}

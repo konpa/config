@@ -20,66 +20,150 @@
 
 # /**/ based
 
-'.source.php, .source.scss, .source.js':
-    'Section comment':
-        'prefix': 'comsec'
-        'body': '''
-            /*
-            ||=========================================================
-            || ${1:Section title}
-            ||=========================================================
-            */
+'.source.php, .source.js':
+  'Section comment':
+    'prefix': 'comsec'
+    'body': '''
+        /*
+        ||=========================================================
+        || ${1:Section title}
+        ||=========================================================
+        ||
+        || ${2:Description}
+        ||
+        */
 
-            /*================ End of "${1:Section title}" ================*/
-        '''
-    'Subsection comment':
-        'prefix': 'comsub'
-        'body': '''
-            /*
-            | ${1:Subsection title}
-            |--------------------------------
-            */
+        /*================ End of "${1:Section title}" ================*/
+    '''
+  'Subsection comment':
+    'prefix': 'comsub'
+    'body': '''
+        /*
+        | ${1:Subsection title}
+        |--------------------------------
+        |
+        | ${2:Description}
+        |
+        */
 
-            /*---- End of "${1:Subsection title}" ----*/
-        '''
+        /*---- End of "${1:Subsection title}" ----*/
+    '''
+
+# For SCSS
+
+'.source.css.scss':
+  'media query':
+    'prefix': 'med'
+    'body': '''
+        @media #{\$$1} {
+          $2
+        }
+    '''
+  'Section comment':
+    'prefix': 'comsec'
+    'body': '''
+        //=========================================================
+        // ${1:Section title}
+        //=========================================================
+        //
+        // ${2:Description}
+        //
+
+        //================ End of "${1:Section title}" ================
+    '''
+  'Subsection comment':
+    'prefix': 'comsub'
+    'body': '''
+        // ${1:Subsection title}
+        //--------------------------------
+        //
+        // ${2:Description}
+        //
+
+        //---- End of "${1:Subsection title}" ----
+    '''
 
 #
 # Laravel snippets
 #
 '.source.php':
-    'Laravel controller':
-        'prefix': 'ctl'
-        'body': '''
-            class ${1:Object}Controller extends BaseController {
+  'Laravel controller':
+    'prefix': 'ctl'
+    'body': '''
+        class ${1:Object}Controller extends BaseController {
 
-            /*
-            |--------------------------------------------------------------------------
-            | ${2:Object} Controller
-            |--------------------------------------------------------------------------
-            |
-            | ${3:Description goes here}
-            |
-            */
+        /*
+        |--------------------------------------------------------------------------
+        | ${2:Object} Controller
+        |--------------------------------------------------------------------------
+        |
+        | ${3:Description goes here}
+        |
+        */
 
-            }
-        '''
-
+        }
+    '''
+  'Laravel test route call':
+    'prefix': 'lara-call'
+    'body': '$response = $this->call(\'${1:method}\', \'${2:route}\', ${3:params});'
 #
 # PHP snippets
 #
-'.source.php':
-    'function':
-        'prefix': 'function'
-        'body': '''
-            /**
-            * ${1:Description}.
-            *
-            * @return ${2:void}
-            */
-            ${3:public} function ${4:name}()
-            {
+  'function':
+    'prefix': 'function'
+    'body': '''
+        /**
+        * ${1:Description}.
+        *
+        * @return ${2:void}
+        */
+        ${3:public} function ${4:name}()
+        {
 
-            $5
+        $5
 
-            }
-        '''
+        }
+    '''
+
+
+#
+# Angular snippets
+#
+'.source.js':
+  'Angular describe':
+    'prefix': 'ng-describe'
+    'body': '''
+        /*
+        ||=========================================================
+        || ${1:title}
+        ||=========================================================
+        ||
+        || ${2:Description}
+        ||
+        */
+
+        describe('${2:name}', function() {
+
+          $3
+        });
+
+    '''
+  'Angular test':
+    'prefix': 'ng-test'
+    'body': '''
+        /*
+        | ${1:title}
+        |--------------------------------
+        */
+        it('${2:description}', function() {
+
+          $3
+        });
+
+    '''
+  'Protractor browser.get':
+    'prefix': 'pro-goto'
+    'body': 'browser.get(\'$1\');'
+  'Angular expect':
+    'prefix': 'ng-expect'
+    'body': 'expect($1).toBe(\'$2\');'

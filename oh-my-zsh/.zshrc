@@ -51,6 +51,7 @@ plugins=(git git-flow github atom brew osx)
 
 export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/Applications/MongoDB/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,9 +80,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias rm="trash"
+
 ##
 # GIT ALIAS
 ##
+
+alias gs="git status"
+alias ga="git add --all"
+alias gc="git commit -m"
 
 alias gfc="git fetch" # update list of branch from the remote
 alias gbr="git branch -r" # display all remote branches
